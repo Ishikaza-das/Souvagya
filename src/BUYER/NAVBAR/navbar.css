@@ -1,0 +1,12 @@
+ .navbar-section {
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #E5C643;
+    padding: 10px 0px 10px 0px;
+    list-style-type: none;
+}
+.style{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}

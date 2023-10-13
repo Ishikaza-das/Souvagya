@@ -9,4 +9,8 @@
 .style{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    /* font-weight: 0; */
 }

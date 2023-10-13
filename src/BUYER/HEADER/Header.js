@@ -1,6 +1,7 @@
 import React from 'react'
 import { RiShoppingCartLine } from 'react-icons/ri';
-import { BiNotification, BiUserCircle } from 'react-icons/bi';
+import { BiUserCircle } from 'react-icons/bi';
+import { FaClipboardList } from 'react-icons/fa';
 // import { IconContext } from "react-icons";
 import "./Header.css";
 
@@ -17,7 +18,7 @@ const Header = () => {
       </div>
     <div className='icon-section'>
         <RiShoppingCartLine />
-        <BiNotification />
+        <FaClipboardList />
         <BiUserCircle />
     </div>
     </div>

@@ -1,0 +1,33 @@
+ [
+    {
+        "id": "1",
+        "name": "Mens",
+        "image": "assets/Man.png"               
+        
+    },
+    {
+        "id": "2",
+        "name": "Woman",
+        "image" : "assets/dress.png"
+    },
+    {
+        "id": "3",
+        "name": "Kids",
+        "image" : "assets/baby-clothing.png"
+    },
+    {
+        "id": "4",
+        "name": "Home Applience",
+        "image" : "assets/electronics.png"
+    },
+    {
+        "id": "5",
+        "name": "Electronics",
+        "image" : "assets/gadgets.png"
+    },
+    {
+        "id": "6",
+        "name": "Best Offers",
+        "image" : "assets/best-price.png"
+    }
+ ]    

@@ -5,7 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
 import Record from "../categories.json"
 import { Link, Routes, Route } from "react-router-dom";
-import Man from "../Categories/Subcomponents/Man"
+import Man from "../Categories/Subcomponents/Man";
+import Woman from "../Categories/Subcomponents/Woman";
+import Kids from "../Categories/Subcomponents/Kids";
+import Electronics from "../Categories/Subcomponents/Electronics";
+import HomeApplience from "../Categories/Subcomponents/HomeApplience";
+import BestOffer from "../Categories/Subcomponents/BestOffer";
 
 
 const settings = {
@@ -34,7 +39,7 @@ const Home = () => {
             Record.map( record => {
               return(
                 <div key={record.id}>
-                  <Link to="/Man" style={{ textDecoration: "none" }}>
+                  <Link to={record.Link} style={{ textDecoration: "none" }}>
                   <div className="section">
                   <img src={record.image} alt="img" />
                   <h4>{record.name}</h4>
@@ -47,6 +52,11 @@ const Home = () => {
         </div>
         <Routes>
         <Route path="/Man" element={<Man />} />
+        <Route path="/Woman" element={<Woman />} />
+          <Route path="/Kid" element={<Kids />} />
+          <Route path="/Electronic" element={<Electronics />} />
+          <Route path="/Home_applience" element={<HomeApplience />} />
+          <Route path="/Best_offer" element={<BestOffer />} />
 
         </Routes>
       </div>

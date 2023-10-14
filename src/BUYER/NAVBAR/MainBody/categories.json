@@ -2,32 +2,38 @@
     {
         "id": "1",
         "name": "Mens",
-        "image": "assets/Man.png"               
+        "image": "assets/Man.png",
+        "Link": "/Man"               
         
     },
     {
         "id": "2",
         "name": "Woman",
-        "image" : "assets/dress.png"
+        "image" : "assets/dress.png",
+        "Link": "/Woman"
     },
     {
         "id": "3",
         "name": "Kids",
-        "image" : "assets/baby-clothing.png"
+        "image" : "assets/baby-clothing.png",
+        "Link": "/Kid"
     },
     {
         "id": "4",
         "name": "Home Applience",
-        "image" : "assets/electronics.png"
+        "image" : "assets/electronics.png",
+        "Link": "/Home_applience"
     },
     {
         "id": "5",
         "name": "Electronics",
-        "image" : "assets/gadgets.png"
+        "image" : "assets/gadgets.png",
+        "Link": "/Electronic"
     },
     {
         "id": "6",
         "name": "Best Offers",
-        "image" : "assets/best-price.png"
+        "image" : "assets/best-price.png",
+        "Link": "/Best_offer"
     }
  ]    

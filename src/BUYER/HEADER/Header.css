@@ -1,5 +1,5 @@
 body{
-    background: white;
+    background: #FFFFFF;
 }
 .header-section{
     display: flex;
@@ -46,32 +46,4 @@ body{
   /* gap: 0.9rem; */
   
    
-}
-.categorie-section{
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  top: 30px;
-  
-}
-.section{
-  width: 5.6vw;
-  background-color: aqua;
-  padding: 5px;
-  padding-top: 13px;
-  justify-content: center;
-  align-items: center;
- text-align: center;
- font-size: 12px;
- background-color: white;
- border-radius: 0.8rem;
- box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
-}
-.section img{
-  width: 1.8rem;
-  object-fit: contain;
-}
-.section h5{
-  padding-top: 5px;
-  color: #001524;
 }

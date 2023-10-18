@@ -6,7 +6,8 @@ import {
   NavLink,
 } from "react-router-dom";
 import Home from "./MainBody/Home/Home";
-import Categories from "./MainBody/Categories/Categories";
+import Menu from "./MainBody/Home/Menu";
+// import Categories from "./MainBody/Categories/Categories";
 import Blog from "./MainBody/Blog/Blog";
 import Contact from "./MainBody/Contact/Contact";
 import About from "./MainBody/AboutUs/About";
@@ -28,9 +29,7 @@ const Nabar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/Categories"} className="style">
-              Categories
-            </NavLink>
+              <Menu />
           </li>
           <li>
             <NavLink to={"/Blog"} className="style">
@@ -59,7 +58,7 @@ const Nabar = () => {
           <Route path="/Home_applience" element={<HomeApplience />} />
           <Route path="/Best_offer" element={<BestOffer />} />
         </Route>
-        <Route path="/Categories" element={<Categories />} />
+        {/* <Route path="/Categories" element={<Categories />} /> */}
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />

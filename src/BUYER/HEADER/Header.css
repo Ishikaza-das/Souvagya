@@ -7,6 +7,9 @@ body{
     top: 20px;
     justify-content: space-between;
     vertical-align: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
    
     
     /* margin: 0px 20px 0px 20px; */
@@ -26,24 +29,25 @@ body{
 
 .input {
   width: 20vw;
-  height: 40px;
+  height: 5vh;
   border: none;
   outline: none;
-  caret-color: rgb(255, 81, 0);
+  caret-color: rgb(0, 187, 255);
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   padding-left: 1.4rem;
   letter-spacing: 0.8px;
   color: rgb(19, 19, 19);
   font-size: 13.4px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;}
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
 
 .icon-section{
-  font-size: 1.6rem;
-  letter-spacing: 400vw;
+  font-size: 1.9vw;
+  /* letter-spacing: 400vw; */
   display: flex;
   justify-content: space-around;
-  /* gap: 0.9rem; */
+  gap: 5vw;
   
    
 }

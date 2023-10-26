@@ -48,9 +48,9 @@ const Home = () => {
       <div className="best-selling">
         {Selling.map((selling) => {
           return(
-            <div key={selling.id} >
+            <div className="section1" key={selling.id} >
               <Link to="*" style={{ textDecoration: "none" }}>
-                <div className="section1">
+                <div >
                   <img src={selling.image} alt="img" />
                   <h4>{selling.name}</h4>
                   <div className="price">
@@ -72,9 +72,9 @@ const Home = () => {
       <div className="best-selling">
         {Selling.map((selling) => {
           return(
-            <div key={selling.id} >
+            <div key={selling.id} className="section1">
               <Link to="*" style={{ textDecoration: "none" }}>
-                <div className="section1">
+                <div >
                   <img src={selling.image} alt="img" />
                   <h4>{selling.name}</h4>
                   <div className="price">

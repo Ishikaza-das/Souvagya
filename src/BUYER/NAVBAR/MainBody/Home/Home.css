@@ -118,6 +118,9 @@ h4{
 .best-selling :hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.section1 :hover{
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+}
 
 
                                             /* HOT PRICE SECTION */

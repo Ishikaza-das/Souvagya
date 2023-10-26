@@ -1,0 +1,33 @@
+.container {
+    width: auto;
+  }
+  button {
+    object-fit: cover;
+    border-radius: 50px;
+    border-width: 2px;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+  .avatar {
+    position: relative;
+  }
+  .list {
+    position: absolute;
+    left: -3.5rem;
+    top: 6rem;
+    
+    padding: 1rem;
+    width: 13rem;
+    background-color: #ffffff;
+  }
+  #list {
+    width: 100rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  .list::hover {
+    background-color: #dbeafe;
+  }
+  

@@ -82,11 +82,28 @@
   .section1{
     padding: 1.9vw;
     border-radius: 15px;
+    width: 15vw;
+    height: 15vw;
     text-align: center;
     border: #001524 2px solid;
     background-color: #F5F5F5;
+    
 
 
+  }
+  .discount-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 9vw;
+    top: -0.4vw;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    font-size: 0.7vw;
+    background: #004225;
+    
   }
 .section1 img{
   width: 9vw;

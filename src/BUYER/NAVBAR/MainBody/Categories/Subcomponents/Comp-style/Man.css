@@ -1,0 +1,27 @@
+.Man-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8vw;
+    position: relative;
+    top: 2vw;
+    left: 5vw;
+    width: 90%;
+   justify-content: center;
+}
+.man-section img{
+    width: 12vw;
+    height: 18vw;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    display: flex;
+}
+.span  h5, .span h6 {
+    position: relative;
+    top: 50px;
+
+}
+.Man a{
+    text-decoration: none;
+    color: #2f3542;
+}
+

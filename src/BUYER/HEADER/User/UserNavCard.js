@@ -32,7 +32,7 @@ const UserNavCard = () => {
                       window.location.pathname = val.link;
                     }}
                   >
-                    <div>{val.title}</div>
+                    <h4>{val.title}</h4>
                   </li>
                 );
               })}

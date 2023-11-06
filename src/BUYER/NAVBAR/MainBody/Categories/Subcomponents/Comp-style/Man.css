@@ -1,27 +1,204 @@
-.Man-section{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8vw;
-    position: relative;
-    top: 2vw;
-    left: 5vw;
-    width: 90%;
-   justify-content: center;
+.Man-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8vw;
+  position: relative;
+  top: 2vw;
+  left: 5vw;
+  width: 90%;
+  justify-content: center;
 }
-.man-section img{
-    width: 12vw;
-    height: 18vw;
-    aspect-ratio: 3/2;
-    object-fit: cover;
-    display: flex;
+.man-section{
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
-.span  h5, .span h6 {
-    position: relative;
-    top: 50px;
+.man-section img {
+  width: 12vw;
+  height: 18vw;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  display: flex;
+}
+.tittle h5,
+.tittle h6 {
+  position: relative;
+  top: 20px;
+}
+.Man a {
+  text-decoration: none;
+  color: #2f3542;
+}
 
-}
-.Man a{
-    text-decoration: none;
-    color: #2f3542;
+
+.test {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
+.tittle h5{
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+.tittle h6{
+  font-size: 0.9vw;
+  font-weight: 500;
+}
+.like{
+  position: relative;
+  left: 9vw;
+  top: 0.2vw;
+  font-size: 1.3vw;
+  
+}
+
+.image-carousel {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1;
+  border-radius: 15px;
+}
+.sliders{
+  width: 80%;
+  /* height: inherit; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-slider .slick-prev::before,
+.slick-slider .slick-next::before {
+  color: red;
+}
+.sliders img {
+  width: 99%;
+  height: 30vw;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.buttons h3 {
+  position: relative;
+  left: 75vw;
+  top: -36vw;
+  color: black;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+.product-name{
+  position: relative;
+  top: 2.2vw;
+}
+.buttons{
+  position: relative;
+  top: 3.6vw;
+}
+
+/* Add to Cart Button Css */
+
+.button {
+  height: 2vw;
+  width: 8.5vw;
+  position: relative;
+  left: 1vw;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #252525;
+  overflow: hidden;
+  border-radius: 3px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 1000;
+  font-size: .8vw;
+  letter-spacing: .1vw;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}
+
+/* Buy NOW Button css */
+
+.Button {
+    width: 8vw;
+    cursor: pointer;
+    position: relative;
+    /* padding: 10px 24px; */
+    font-size: 13px;
+    color: #E9C724;
+    border: 2px solid #E9C724;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .Button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #E9C724;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .Button:hover::before {
+    scale: 3;
+  }
+  
+  .Button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  
+  .Button:active {
+    scale: 1;
+  }
+  
+  
+  

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 const settings = {
   dots: true,
+  fade: true,
   infinite: true,
   speed: 700,
   slidesToShow: 1,

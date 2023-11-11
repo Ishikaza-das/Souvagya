@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   NavLink,
+  
 } from "react-router-dom";
 import Home from "./MainBody/Home/Home";
 import Menu from "./MainBody/Home/Menu";
@@ -18,6 +19,7 @@ import Kids from "./MainBody/Categories/Subcomponents/Kids";
 import Electronics from "./MainBody/Categories/Subcomponents/Electronics";
 import HomeApplience from "./MainBody/Categories/Subcomponents/HomeApplience";
 import BestOffer from "./MainBody/Categories/Subcomponents/BestOffer";
+
 const Nabar = () => {
   return (
     <Router>

@@ -20,6 +20,8 @@ const UserNavCard = () => {
       <div className="avatar">
         <button ref={imgRef} onClick={() => setOpen(!open)} />
 
+        
+
         {open && (
           <div className="list">
             <ul>

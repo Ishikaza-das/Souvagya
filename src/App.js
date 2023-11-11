@@ -1,13 +1,12 @@
 import "./App.css";
-import Header from "./BUYER/HEADER/Header";
-import Nabar from "./BUYER/NAVBAR/Nabar";
-import Footer from "./BUYER/FOOTER/Footer";
-
+import Header from "./BUYER/Header/Header";
+import Nabar from "./BUYER/Navbar/Nabar";
+import Footer from "./BUYER/Footer/Footer";
 function App() {
   return (
     <div>
       <Header />
-
+        
       <Nabar />
 
       <Footer />

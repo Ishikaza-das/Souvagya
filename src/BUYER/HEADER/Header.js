@@ -9,9 +9,12 @@ import UserNav from "./User/UserNav";
 const Header = () => {
 
   return (
+    <>
 
     <div className="header-section">
-      <div className="logo-section">Quick Mart and Logo</div>
+      <div className="logo-section">
+        <img src="Quick_Mart_Logo.png" alt="img"/>
+      </div>
       <div className="search-bar">
         <input
           placeholder="Search.."
@@ -21,12 +24,31 @@ const Header = () => {
         />
       </div>
       <div className="icon-section">
-        <RiShoppingCartLine />
-        <FaClipboardList />
-        {/* <BiUserCircle /> */}
-        <UserNav />
+        <ul>
+          <li>
+          <i><RiShoppingCartLine /></i>
+          </li>
+          <li>
+          <FaClipboardList />
+          </li>
+          <li>
+          <UserNav />
+          </li>
+        </ul>
+
+
+
+
+
+
+
+      
+        
       </div>
+     
     </div>
+    
+    </>
   );
 };
 

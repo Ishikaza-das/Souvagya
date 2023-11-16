@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": "11",
         "image":"assets/Women/wclothing1.jpg",
         "name":"Women Printed Viscose Rayon Ethnic Dress  (Pink)",
         "price": "₹385",
@@ -9,7 +9,7 @@
         "thubnail-3": "assets/Women/wclothing1.3.jpg"
     },
     {
-        "id": "2",
+        "id": "12",
         "image":"assets/Women/wclothing2.jpg",
         "name":"Women Printed Pure Cotton Straight Kurta  (White)",
         "price": "₹219",
@@ -18,7 +18,7 @@
         "thubnail-3": "assets/Women/wclothing2.3.jpg"
     },
     {
-        "id": "3",
+        "id": "13",
         "image":"assets/Women/wclothing3.jpg",
         "name":"Men Solid Crew Neck Pure Cotton White T-Shirt",
         "price": "₹299",
@@ -27,7 +27,7 @@
         "thubnail-3": "assets/Women/wclothing3.jpg"
     },
     {
-        "id": "4",
+        "id": "14",
         "image":"assets/Women/wclothing4.jpg",
         "name":"Men Solid Crew Neck Pure Cotton White T-Shirt",
         "price": "₹299",

@@ -1,23 +1,35 @@
 import "./App.css";
-import Header from "./BUYER/HEADER/Header"
-import Navbar from "./BUYER/NAVBAR/Navbar"
-import Footer from "./BUYER/FOOTER/Footer"
-import App1 from "./VENDOR/App1";
+import Header from "./BUYER/Header/Header";
+import Nabar from "./BUYER/Navbar/Nabar";
+import Footer from "./BUYER/Footer/Footer";
+import { useState } from "react";
+import Cart from "./BUYER/Header/Cart/Cart";
+
 
 function App() {
+  const [isCartOpen, setCartOpen] = useState(false);
+
+  const handleCartClick = () => {
+    setCartOpen(!isCartOpen);
+  };
+
   return (
     <div>
-      <Header />
-        
-      <Navbar />
+      <Header onCartClick={handleCartClick}/>
+      {isCartOpen ? (
+        <Cart />
+      ) :(
+        <>
+         <Nabar />
 
-      <Footer />
+          <Footer />
+        </>
+      )}
       
         {/* <App1/>   */}
     
   
-      
-    
+ 
     </div>
   );
 }

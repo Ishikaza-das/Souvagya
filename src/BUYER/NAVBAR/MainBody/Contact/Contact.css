@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.contact{
+    display: flex;
+    position: relative;
+    top: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 5vw;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #F5F5F5;
+    border-radius: 0.9vw;
+    /* background: url("/public/assets/blob-scene-haikei.svg"); */
+
+  }
+
+
+  .contact-leftside{
+    width: 50vw;
+  }
+.contact-leftside lable{
+  display: flex;
+  margin-top: 3vw;
+  font-size: 3.2vw;
+  font-weight: 600;
+  color: #060606;
+
+}
+.contact-leftside p{
+  font-size: 1.1vw;
+  font-weight: 400;
+  color: #828483;
+}
+.contact h1{
+   font-size: 2vw;
+   text-transform: uppercase;
+   font-family: Mona Sans;
+  }
+.input-box{
+  display: grid;
+  /* grid-template-columns: repeat(2,17vw); */
+  position: relative;
+  padding: 2vw;
+  padding-bottom: 4vw;
+
+  /* left: 5vw; */
+  /* top:6vw; */
+  /* gap: 2vw; */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  
+
+
+}
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  position: relative;
+  top: 2vw;
+}
+
+.contact-rightside{
+   width: 35vw;
+   /* flex-basis: 25%; */
+   
+   
+}
+.inputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  
+  #inputField {
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 0.7vw;
+    padding: 0.7vw 1vw;
+    color: black;
+    font-weight: 500;
+    outline: none;
+    caret-color: rgb(26, 21, 32);
+    transition-duration: .3s;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  .userIcon {
+    position: absolute;
+    fill: rgb(155, 78, 255);
+    width: 0.8vw;
+    top: -1.5vw;
+    left: -1.2vw;
+    opacity: 0;
+    transition: .2s linear;
+  }
+  
+  .usernameLabel {
+    position: absolute;
+    top: -1.6vw;
+    left: 0.1vw;
+    color: black;
+    font-size: 0.9vw;
+    font-weight: 500;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    transition: .2s linear;
+    opacity: 0;
+  }
+  
+  #inputField:focus ~ .usernameLabel,
+  #inputField:valid ~ .usernameLabel {
+    transform: translateX(1.5vw);
+    opacity: 1;
+  }
+  
+  #inputField:focus ~ .userIcon,
+  #inputField:valid ~ .userIcon {
+    transform: translateX(1.5vw);
+    opacity: 1;
+  }
+  
+  #inputField:focus,
+  #inputField:valid {
+    background-color: #e7edf1;
+    transition-duration: .3s;
+  }
+  textarea{
+    width:  28vw;
+    height: 8vw;
+  }
+  button {
+    position: relative;
+    /* display: inline-block; */
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: 0.9vw;
+    font-family: inherit;
+    /* top: 8vw; */
+    /* left: -19vw; */
+   }
+   
+   button.learn-more {
+    width: 8vw;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 2.5vw;
+    height: 2.5vw;
+    background: #282936;
+    border-radius: 2vw;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.6vw;
+    top: 0.1vw;
+    width: 0.9vw;
+    height: 0.1vw;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.2vw;
+    right: 0vw;
+    width: 0.5vw;
+    height: 0.5vw;
+    border-top: 0.12vw solid #fff;
+    border-right: 0.12vw solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: -0.3vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.9vw 0;
+    margin: 0 0 0 1.8vw;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(0.9vw, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }

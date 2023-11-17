@@ -3,7 +3,7 @@ import React from "react";
 const Profile = () => {
   return (
     <div>
-      <img src="profile.png" alt="" />
+      <img src="profile.png" alt="no_img" />
       Profile
     </div>
   );

@@ -6,12 +6,16 @@ import { FaClipboardList } from "react-icons/fa";
 import "./Header.css";
 import UserNav from "./User/UserNav";
 
-const Header = () => {
-
+const Header = ({onCartClick}) => {
+  
+  
   return (
+    <>
 
     <div className="header-section">
-      <div className="logo-section">Quick Mart and Logo</div>
+      <div className="logo-section">
+        <img src="Quick_Mart_Logo.png" alt="img"/>
+      </div>
       <div className="search-bar">
         <input
           placeholder="Search.."
@@ -20,13 +24,32 @@ const Header = () => {
           type="text"
         />
       </div>
-      <div className="icon-section">
-        <RiShoppingCartLine />
-        <FaClipboardList />
-        {/* <BiUserCircle /> */}
-        <UserNav />
+      <div >
+        <ul className="icon-section">
+          <li>
+          <i onClick={onCartClick}><RiShoppingCartLine /></i>
+          </li>
+          <li>
+          <FaClipboardList />
+          </li>
+          <li>
+          <UserNav />
+          </li>
+        </ul>
+
+
+
+
+
+
+
+      
+        
       </div>
+     
     </div>
+    
+    </>
   );
 };
 

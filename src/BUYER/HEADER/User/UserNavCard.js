@@ -20,6 +20,8 @@ const UserNavCard = () => {
       <div className="avatar">
         <button ref={imgRef} onClick={() => setOpen(!open)} />
 
+        
+
         {open && (
           <div className="list">
             <ul>
@@ -32,7 +34,7 @@ const UserNavCard = () => {
                       window.location.pathname = val.link;
                     }}
                   >
-                    <div>{val.title}</div>
+                    <h4>{val.title}</h4>
                   </li>
                 );
               })}

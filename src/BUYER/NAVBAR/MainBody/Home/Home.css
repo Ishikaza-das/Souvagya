@@ -48,7 +48,13 @@
    background-color: white;
    border-radius: 0.8rem;
    gap:9px;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  */
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   transition: transform 0.2s ease-in-out;
+
+  }
+  .section:hover{
+    transform: scale(1.1);
   }
   .section img{
     width: 1.8vw;
@@ -79,20 +85,44 @@
     position: relative;
     top: 3rem;
   }
-  .section1{
+  .h{
     padding: 1.9vw;
     border-radius: 15px;
+    width: 15vw;
+    height: 15vw;
     text-align: center;
-    border: #001524 2px solid;
-    background-color: #F5F5F5;
+    /* border: #001524 2px solid; */
+    /* background-color: #F5F5F5; */
+    transition: transform 0.2s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  /* border: 2px solid #212121; */
+
+    
 
 
+  }
+  .discount-tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 9vw;
+    top: -0.4vw;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    font-size: 0.7vw;
+    background: #004225;
+    
   }
 .section1 img{
   width: 9vw;
   aspect-ratio: 3/2;
   object-fit: contain;
   
+}
+.h:hover{
+  transform: scale(1.1);
+  border-radius: 15px;
 }
 .section1 h4{
   color: #001524;

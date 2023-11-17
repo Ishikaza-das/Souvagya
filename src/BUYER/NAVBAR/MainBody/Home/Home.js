@@ -3,13 +3,13 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
-import Record from "../categories.json";
-import Selling from "../BestSelling.json"
+import Categorie from "../categories.json";
+import Selling from "../BestSelling.json";
 import { Link } from "react-router-dom";
-
 
 const settings = {
   dots: true,
+  fade: true,
   infinite: true,
   speed: 700,
   slidesToShow: 1,
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
       </Slider>
       <div className="categorie-section">
-        {Record.map((record) => {
+        {Categorie.map((record) => {
           return (
             <div key={record.id}>
               <Link to={record.Link} style={{ textDecoration: "none" }}>
@@ -43,54 +43,54 @@ const Home = () => {
           );
         })}
       </div>
-     <div className="categorie-section1">
-      <h3>Best Selling</h3>
-      <div className="best-selling">
-        {Selling.map((selling) => {
-          return(
-            <div className="section1" key={selling.id} >
-              <Link to="*" style={{ textDecoration: "none" }}>
-                <div >
-                  <img src={selling.image} alt="img" />
-                  <h4>{selling.name}</h4>
-                  <div className="price">
-                    <h6>{selling.price}</h6>
-                    <h6>{selling.discount}</h6>
+      <div className="categorie-section1">
+        <h3>Best Selling</h3>
+        <div className="best-selling">
+          {Selling.map((selling) => {
+            return (
+              <div className="section1" key={selling.id}>
+                <Link to="*" style={{ textDecoration: "none" }}>
+                  <div className="h">
+                    <h4 className="discount-tag" style={{ color: "#F5F5F5" }}>
+                      {selling.discount}
+                    </h4>
+                    <img src={selling.image} alt="img" />
+                    <h4>{selling.name}</h4>
+                    <div className="price">
+                      <h6>{selling.price}</h6>
+                      <h6>{selling.price1}</h6>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          )
-        })
-
-        }
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
-
-     </div>
-     <div className="categorie-section2">
-      <h3>Hot Price</h3>
-      <div className="best-selling">
-        {Selling.map((selling) => {
-          return(
-            <div key={selling.id} className="section1">
-              <Link to="*" style={{ textDecoration: "none" }}>
-                <div >
-                  <img src={selling.image} alt="img" />
-                  <h4>{selling.name}</h4>
-                  <div className="price">
-                    <h6>{selling.price}</h6>
-                    <h6>{selling.discount}</h6>
+      <div className="categorie-section2">
+        <h3>Hot Price</h3>
+        <div className="best-selling">
+          {Selling.map((selling) => {
+            return (
+              <div key={selling.id} className="section1">
+                <Link to="*" style={{ textDecoration: "none" }}>
+                  <div className="h">
+                    <h4 className="discount-tag" style={{ color: "#F5F5F5" }}>
+                      {selling.discount}
+                    </h4>
+                    <img src={selling.image} alt="img" />
+                    <h4>{selling.name}</h4>
+                    <div className="price">
+                      <h6>{selling.price}</h6>
+                      <h6>{selling.price1}</h6>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            </div>
-          )
-        })
-
-        }
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
-
-     </div>
     </div>
   );
 };

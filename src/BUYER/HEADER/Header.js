@@ -24,8 +24,8 @@ const Header = ({onCartClick}) => {
           type="text"
         />
       </div>
-      <div >
-        <ul className="icon-section">
+      <div className="icon-section">
+        <ul>
           <li>
           <i onClick={onCartClick}><RiShoppingCartLine /></i>
           </li>

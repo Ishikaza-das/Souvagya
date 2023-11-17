@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./BUYER/Header/Header";
-import Nabar from "./BUYER/Navbar/Navbar";
+import Nabar from "./BUYER/Navbar/Nabar";
 import Footer from "./BUYER/Footer/Footer";
 import { useState } from "react";
 import Cart from "./BUYER/Header/Cart/Cart";

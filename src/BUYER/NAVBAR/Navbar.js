@@ -19,6 +19,7 @@ import Kids from "./MainBody/Categories/Subcomponents/Kids";
 import Electronics from "./MainBody/Categories/Subcomponents/Electronics";
 import HomeApplience from "./MainBody/Categories/Subcomponents/HomeApplience";
 import BestOffer from "./MainBody/Categories/Subcomponents/BestOffer";
+import PressureCooker from "./MainBody/Categories/Subcomponents/PressureCooker"
 
 const Nabar = () => {
   return (
@@ -59,6 +60,7 @@ const Nabar = () => {
           <Route path="/Electronic" element={<Electronics />} />
           <Route path="/Home_applience" element={<HomeApplience />} />
           <Route path="/Best_offer" element={<BestOffer />} />
+          <Route path="/PressureCooker" element={<PressureCooker />} />
         </Route>
         {/* <Route path="/Categories" element={<Categories />} /> */}
         <Route path="/Blog" element={<Blog />} />

@@ -5,7 +5,8 @@
         "image": "assets/images-removebg-preview 1.png",
         "price": "$30.00",
         "price1": "40.00",
-        "discount": "-10%"
+        "discount": "-10%",
+        "Link": "*"
     },
     {
         "id": "42",
@@ -13,7 +14,8 @@
         "image": "assets/71ccNxo9rtL 1.png",
         "price": "$30.00",
         "price1": "40.00",
-        "discount": "-10%"
+        "discount": "-10%",
+        "Link": "*"
     },
     {
         "id": "43",
@@ -21,7 +23,8 @@
         "image": "assets/plate_rack_5000_1_-removebg-preview 1.png",
         "price": "$30.00",
         "price1": "40.00",
-        "discount": "-10%"
+        "discount": "-10%",
+        "Link":"*"
     },
     {
         "id": "44",
@@ -29,7 +32,8 @@
         "image": "assets/1-5-3-2-pressure-cooker-pressure-pan-snapple-original-imagh3hjuuxyujnc-removebg-preview 1.png",
         "price": "$30.00",
         "price1": "40.00",
-        "discount": "-10%"
+        "discount": "-10%",
+        "Link":"/PressureCooker"
     }
     
 ]

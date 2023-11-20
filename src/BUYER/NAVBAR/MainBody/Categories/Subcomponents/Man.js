@@ -15,15 +15,17 @@ const settings = {
   slidesToScroll: 1,
 };
 
-const addToCart = () => {
-  console.log('Add to Cart');
-}
+// const addToCart = () => {
+//   console.log('Add to Cart');
+// }
 
 const buyNow = () => {
   console.log('Buy Now');
 }
 
 const Man = () => {
+  const [cart, setCart] = useState([]);
+  
   const [selectedItemId, setSelectedItemId] = useState(null);
 
   const toggleSecondDiv = (itemId) => {
@@ -34,6 +36,10 @@ const Man = () => {
     setSelectedItemId(null);
   }
 
+  const addToCart = (man) => {
+    setCart([...cart, man]);
+  };
+
 
 
   return (
@@ -42,12 +48,13 @@ const Man = () => {
         {Mans.map((mans,index) => {
           return (
             <>
-              <div className='Man' key={index}>
+              <div className='Man' key={mans.id}>
                 <div className='man-section' onClick={() => toggleSecondDiv(mans.id)} >
                   <img src={mans.image} alt="img"  />
                   <div className='tittle'>
-                    <h5>{mans.name} </h5>
-                    <h6>{mans.price}<span className="like"> <AiFillHeart /> </span></h6>
+                    <label>{mans.name} </label>
+                    <p>{mans.price}<span className="like"> <AiFillHeart /> </span>
+</p>
                     
                   </div>
                 </div>
@@ -73,8 +80,8 @@ const Man = () => {
                     {/* Buttons for Add to Cart and Buy Now */}
                     <div className="buttons">
                     <button onClick={buyNow} className="Button">Buy Now</button>
-                      <button onClick={addToCart} className="button type1">
-                      <div class="btn-txt">Add to cart</div>
+                      <button onClick={() => addToCart(mans)} className="button type1">
+                      <div className="btn-txt">Add to cart</div>
                       </button>
                       <h3  onClick={close}> <ImCancelCircle /></h3>
                     </div>

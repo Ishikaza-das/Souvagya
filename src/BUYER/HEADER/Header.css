@@ -49,6 +49,7 @@ body{
   justify-content: space-around;
   gap: 5vw;
   vertical-align: middle;
+  display: flex;
   
    
 }

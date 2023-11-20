@@ -50,7 +50,7 @@ const Home = () => {
             return (
               <div className="section1" key={selling.id}>
                 <Link to="*" style={{ textDecoration: "none" }}>
-                  <div>
+                  <div className="h">
                     <h4 className="discount-tag" style={{ color: "#F5F5F5" }}>
                       {selling.discount}
                     </h4>
@@ -74,7 +74,7 @@ const Home = () => {
             return (
               <div key={selling.id} className="section1">
                 <Link to="*" style={{ textDecoration: "none" }}>
-                  <div>
+                  <div className="h">
                     <h4 className="discount-tag" style={{ color: "#F5F5F5" }}>
                       {selling.discount}
                     </h4>

@@ -6,8 +6,9 @@ import { FaClipboardList } from "react-icons/fa";
 import "./Header.css";
 import UserNav from "./User/UserNav";
 
-const Header = () => {
-
+const Header = ({onCartClick}) => {
+  
+  
   return (
     <>
 
@@ -26,7 +27,7 @@ const Header = () => {
       <div className="icon-section">
         <ul>
           <li>
-          <i><RiShoppingCartLine /></i>
+          <i onClick={onCartClick}><RiShoppingCartLine /></i>
           </li>
           <li>
           <FaClipboardList />

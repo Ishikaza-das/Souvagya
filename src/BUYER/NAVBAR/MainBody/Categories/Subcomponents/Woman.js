@@ -46,8 +46,8 @@ const Woman = () => {
                 <div className='man-section' onClick={() => toggleSecondDiv(womans.id)} >
                   <img src={womans.image} alt="img"  />
                   <div className='tittle'>
-                    <h5>{womans.name} </h5>
-                    <h6>{womans.price}<span className="like"> <AiFillHeart /> </span></h6>
+                    <label>{womans.name} </label>
+                    <p>{womans.price}<span className="like"> <AiFillHeart /> </span></p>
                     
                   </div>
                 </div>

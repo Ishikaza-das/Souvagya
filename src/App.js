@@ -5,19 +5,21 @@ import Footer from "./BUYER/FOOTER/Footer"
 // import App1 from "./VENDOR/App1";
 
 function App() {
+  const [isCartOpen, setCartOpen] = useState(false);
+
+  const handleCartClick = () => {
+    setCartOpen(!isCartOpen);
+  };
+
   return (
     <div>
-        <Header />
+          <Header />
         
-      <Navbar />
-
-      <Footer /> 
-       
-         {/* <App1/>    */}
-    
+        <Navbar />
   
-      
-    
+        <Footer /> 
+         
+           {/* <App1/>    */}
     </div>
   );
 }

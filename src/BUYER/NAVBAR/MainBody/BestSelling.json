@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": "41",
         "name": "Glass Wooden Table",
         "image": "assets/images-removebg-preview 1.png",
         "price": "$30.00",
@@ -8,7 +8,7 @@
         "discount": "-10%"
     },
     {
-        "id": "2",
+        "id": "42",
         "name": "Wooden Lamp",
         "image": "assets/71ccNxo9rtL 1.png",
         "price": "$30.00",
@@ -16,7 +16,7 @@
         "discount": "-10%"
     },
     {
-        "id": "3",
+        "id": "43",
         "name": "Plate Rack",
         "image": "assets/plate_rack_5000_1_-removebg-preview 1.png",
         "price": "$30.00",
@@ -24,7 +24,7 @@
         "discount": "-10%"
     },
     {
-        "id": "4",
+        "id": "44",
         "name": "Pressure cooker set",
         "image": "assets/1-5-3-2-pressure-cooker-pressure-pan-snapple-original-imagh3hjuuxyujnc-removebg-preview 1.png",
         "price": "$30.00",

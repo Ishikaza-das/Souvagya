@@ -1,0 +1,38 @@
+[
+    {
+        "id": "300",
+        "image":"assets/PressureCooker/PressureCooker1.jpg",
+        "name":"Hawkins 1.5 Litre Pressure Cooker",
+        "price": "₹1000",
+        "thubnail-1": "assets/PressureCooker/PressureCooker1.1.jpg",
+        "thubnail-2": "assets/PressureCooker/PressureCooker1.2.jpg",
+        "thubnail-3": "assets/PressureCooker/PressureCooker1.3.jpg"
+    },
+    {
+        "id": "301",
+        "image":"assets/Women/wclothing2.jpg",
+        "name":"Butterfly Cordial Non Induction Base Aluminium Pressure Cooker ",
+        "price": "₹385",
+        "thubnail-1": "assets/PressureCooker/PressureCooker2.1.jpg",
+        "thubnail-2": "assets/PressureCooker/PressureCooker2.2.jpg",
+        "thubnail-3": "assets/PressureCooker/PressureCooker2.3.jpg"
+    },  
+    {
+        "id": "302",
+        "image":"assets/Women/wclothing3.jpg",
+        "name":"Butterfly Curve Stainless Steel Outer Lid Pressure Cooker, 3 Litre",
+        "price": "₹885",
+        "thubnail-1": "assets/PressureCooker/PressureCooker3.1.jpg",
+        "thubnail-2": "assets/PressureCooker/PressureCooker3.2.jpg",
+        "thubnail-3": "assets/PressureCooker/PressureCooker3.3.jpg"
+    },  
+    {
+        "id": "303",
+        "image":"assets/Women/wclothing4.jpg",
+        "name":"Pigeon by Stovekraft 12091 Favourite Aluminum Induction Base Pressure Cooker",
+        "price": "₹955",
+        "thubnail-1": "assets/PressureCooker/PressureCooker4.1.jpg",
+        "thubnail-2": "assets/PressureCooker/PressureCooker4.2.jpg",
+        "thubnail-3": "assets/PressureCooker/PressureCooker4.3.jpg"
+    }  
+]

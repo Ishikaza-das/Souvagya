@@ -1,22 +1,12 @@
 import React from 'react';
-import {
-  BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill,
-  BsPeopleFill, BsListCheck, BsMenuButtonWideFill, BsFillGearFill,
-} from 'react-icons/bs';
+import { Link } from 'react-router-dom';
+
 
 
 function Sidebar({ openSidebarToggle, OpenSidebar }) {
-  // Replace these with the actual user information
+ 
   const userLogoSrc = "https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png";
-//    <svg width="62" height="73" viewBox="0 0 62 73" fill="none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
-// <ellipse cx="30.7353" cy="36.5" rx="30.7353" ry="36.5" fill="url(#pattern0)" />
-// <defs>
-// <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-// <use href="#image0_253_21" transform="translate(-0.0106961 -0.594187) scale(0.00117647)" />
-// </pattern>
 
-// </defs>
-// </svg>
   
   const username = "Monkey D. Luffy";
 
@@ -41,45 +31,45 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
 
       <ul className='sidebar-list'>
         <li className='sidebar-list-item'>
-          <a href="">
+          <Link to='/Dashboard'>
             Dashboard
-          </a>
+          </Link>
          
         </li>
         <li className='sidebar-list-item'>
-          <a href="">
+        <Link to='/Products'>
             Products
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href="">
-             ORDER
-          </a>
+        <Link to='/Orders'>
+            Orders
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href="">
-             Reports
-          </a>
+        <Link to='/Dashboard'>
+            Dashboard
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href="">
-             Inventory
-          </a>
+        <Link to='/Reports'>
+            Reports
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href="">
-             Coupons
-          </a>
+        <Link to='/Coupons'>
+          Coupons
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href="">
+        <Link to='/Withdraw'>
             Withdraw
-          </a>
+          </Link>
         </li>
         <li className='sidebar-list-item'>
-          <a href="">
-            VENDOR Profile
-          </a>
+        <Link to='/Vendorprofile'>
+          Vendor profile
+          </Link>
         </li>
       </ul>
     </aside>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Mans from "./Mans.json";
+import Electronic from './Electronics.json'
 import "./Comp-style/Man.css";
 import { AiFillHeart } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
@@ -10,22 +10,23 @@ import 'slick-carousel/slick/slick-theme.css';
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 700,
   slidesToShow: 1,
   slidesToScroll: 1,
+  swipeToSlide: true,
+  
+ 
 };
 
-// const addToCart = () => {
-//   console.log('Add to Cart');
-// }
+const addToCart = () => {
+  console.log('Add to Cart');
+}
 
 const buyNow = () => {
   console.log('Buy Now');
 }
 
 const Electronics = () => {
-  const [cart, setCart] = useState([]);
-  
   const [selectedItemId, setSelectedItemId] = useState(null);
 
   const toggleSecondDiv = (itemId) => {
@@ -36,51 +37,47 @@ const Electronics = () => {
     setSelectedItemId(null);
   }
 
-  const addToCart = (man) => {
-    setCart([...cart, man]);
-  };
-
 
 
   return (
     <>
       <div className='Man-section' >
-        {Mans.map((mans,index) => {
+        {Electronic.map((electronic,index) => {
           return (
             <>
-              <div className='Man' key={mans.id}>
-                <div className='man-section' onClick={() => toggleSecondDiv(mans.id)} >
-                  <img src={mans.image} alt="img"  />
+              <div className='Man' key={index}>
+                <div className='man-section' onClick={() => toggleSecondDiv(electronic.id)} >
+                  <img src={electronic.image} alt="img"  />
                   <div className='tittle'>
-                    <h5>{mans.name} </h5>
-                    <h6>{mans.price}<span className="like"> <AiFillHeart /> </span></h6>
+                    <h5>{electronic.name} </h5>
+                    <h6>{electronic.price}<span className="like"> <AiFillHeart /> </span></h6>
                     
                   </div>
                 </div>
               </div>
-              {selectedItemId === mans.id && (
+              {selectedItemId === electronic.id && (
                 <div className="test" >
                   {/* Image carousel */}
                   <div className="image-carousel">
                     <Slider {...settings} className="slider" key={index}>
                       <div className="sliders">
-                        <img src={mans["thubnail-1"]} alt="img" />
+                        <img src={ electronic["thumbnail-1"]} alt="img" />
                       </div>
                       <div className="sliders">
-                        <img src={mans["thubnail-2"]} alt="img" />
+                        <img src={electronic["thumbnail-2"]} alt="img" />
                       </div>
                       <div className="sliders">
-                        <img src={mans["thubnail-3"]} alt="img" />
+                        <img src={electronic["thumbnail-3"]} alt="img" />
                       </div>
                     </Slider>
 
-                    <h4 className="product-name">{mans.name}</h4>
+                    <h4 className="product-name">{electronic.name}</h4>
 
                     {/* Buttons for Add to Cart and Buy Now */}
                     <div className="buttons">
                     <button onClick={buyNow} className="Button">Buy Now</button>
-                      <button onClick={() => addToCart(mans)} className="button type1">
-                      <div className="btn-txt">Add to cart</div>
+                      <button onClick={addToCart} className="button type1">
+                      <div class="btn-txt">Add to cart</div>
                       </button>
                       <h3  onClick={close}> <ImCancelCircle /></h3>
                     </div>

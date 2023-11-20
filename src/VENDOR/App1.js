@@ -4,7 +4,10 @@ import './Vendorpage.css';
 import ProductRegistration from './ProductRegistration';
 import Header from './Header';
 import Sidebar from './Sidebar';
-import Home from './home';
+import Home from './Home1';
+import Products from './Products';
+import Profile from './../BUYER/HEADER/User/Pages/Profile';
+import Home1 from './Home1';
 
 function App1() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -18,15 +21,31 @@ function App1() {
       <div className='grid-container'>
         <Header OpenSidebar={OpenSidebar} />
         <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />
-        <Home />
-      </div>
-      <Routes>
-      <Route path="ProductRegistration" element={<ProductRegistration />} />
-      <Route path='/products' />
-  {/* <Route path="/add-product" element={<ProductRegistration />} /> Add this line */}
-  
-</Routes>
+        <Routes>
+        <Route path="/"  >
+        <Route index element={<Home1/>} />
+          <Route path="/product-registration" element={<ProductRegistration />} />
+          <Route path='/Dashboard' element={<Home1/>} />
+          <Route path="/Products" element={<Products/>} />
 
+          {/* <Route path="*" element={<Order/>} /> */}
+          {/* <Route path="*" element={<Reports/>} />
+          <Route path="*" element={<Coupons />} />
+          <Route path="*" element={<Withdraw />} />
+          <Route path="*" element={<Vendor Profile />} /> */}
+
+          
+          
+          
+          
+
+          
+
+           </Route>
+      
+        </Routes>
+        
+      </div>
     </BrowserRouter>
   );
 }

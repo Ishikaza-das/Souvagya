@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+
 import { Chart, ArcElement } from 'chart.js';
 import Rectangle117 from './Rectangle117';
 import Rectangle118 from './Rectangle118';
@@ -17,7 +17,7 @@ const Card = ({ title, value }) => (
   </div>
 );
 
-function Home() {
+function Home1() {
   const [loading, setLoading] = useState(true);
 
   const [totalOrders, setTotalOrders] = useState(0);
@@ -48,13 +48,15 @@ function Home() {
       <div className="main-title">
         <h3>Dashboard</h3>
       </div>
-      <Link to="/product-registration">Go to Product Registration</Link>
+    
       {loading ? (
         <p>Loading...</p>
       ) : (
         <div className="main-cards">
           <Card title="Total Orders" value={totalOrders} />
-          {/* ... other Card components */}
+          <Card title="New Orders" value={NewOrders} />
+          <Card title="Total Order Cancel" value={TotalOrdersCancel} />
+          <Card title=" Order pending" value={Orderpending} />
         </div>
       )}
       <div className="charts">
@@ -66,4 +68,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home1;

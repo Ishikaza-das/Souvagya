@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import Products from './Products';
+import { BrowserRouter, Link, Route, Router } from 'react-router-dom';
+import ProductRegistration from './ProductRegistration';
+
 
 const Products = () => {
+  <BrowserRouter>
+    <Router>
+      <Route path="/product registration" component={<ProductRegistration/>} />
+    </Router>
+  </BrowserRouter>
+  
   const [products, setProducts] = useState([]);
 
   const getAllProducts = async () => {
@@ -15,7 +23,7 @@ const Products = () => {
         alert("Error in fetching data");
       }
     } catch (error) {
-      console.log(error);
+     
     }
   };
 
@@ -35,7 +43,9 @@ const Products = () => {
   };
 
   return (
+    
     <div>
+      <Link to="/product-registration">Go to Product Registration</Link>
       <h2>Your Products</h2>
       <table className="table">
         <thead>

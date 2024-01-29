@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Souvagya/static/css/main.91fcf29d.css",
+    "main.js": "/Souvagya/static/js/main.865612d8.js",
+    "static/js/787.e3a25a06.chunk.js": "/Souvagya/static/js/787.e3a25a06.chunk.js",
+    "static/media/slick.svg": "/Souvagya/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Souvagya/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Souvagya/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Souvagya/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Souvagya/index.html",
+    "main.91fcf29d.css.map": "/Souvagya/static/css/main.91fcf29d.css.map",
+    "main.865612d8.js.map": "/Souvagya/static/js/main.865612d8.js.map",
+    "787.e3a25a06.chunk.js.map": "/Souvagya/static/js/787.e3a25a06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91fcf29d.css",
+    "static/js/main.865612d8.js"
+  ]
+}
